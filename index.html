@@ -57,6 +57,31 @@
             border-top: 1px solid #ccc;
         }
 
+        .funky-btn {
+            background: linear-gradient(45deg, #ff6ec4, #7873f5);
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .funky-btn:hover {
+            background: linear-gradient(45deg, #7873f5, #ff6ec4);
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -77,6 +102,12 @@
                 font-size: 1.2rem;
             }
 
+            .funky-btn {
+                font-size: 1rem;
+                padding: 12px 20px;
+                width: 90%;
+            }
+
             h2 {
                 font-size: 1rem;
             }
@@ -91,6 +122,16 @@
 <body>
     <header>Only for class 7th Chapter:6</header>
     <div class="container">
+
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <h1>STUDENT REGISTRATION FORM : FILL THIS FORM TO GET ACCESS TO LEARNSHALA PORTAL</h1>
+        </marquee>
+
+        <div class="btn-container">
+            <a href="https://learnshala.in/school-student-registration/" target="_blank">
+                <button class="funky-btn">Registration Form</button>
+            </a>
+        </div>
 
         <h1> Question : Who created Python?</h1>
         <h2>Answer : Python was created by Guido van Rossum in the late 1980s and was officially released in 1991. He
